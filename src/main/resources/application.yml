@@ -1,0 +1,22 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+    encoding:
+      charset: utf-8
+    session:
+      timeout: 30
+
+spring:
+  mustache:
+    expose-session-attributes: true
+  jpa:
+    open-in-view: true
+    hibernate:
+      ddl-auto: create
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true
+    properties:
+      "[hibernate.format_sql]": true
+  
